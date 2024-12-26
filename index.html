@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Celebration</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.w3schools.com/w3images/snow.jpg'); /* Background image */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            overflow-y: scroll; /* Allow vertical scrolling */
+            scroll-behavior: smooth; /* Enable smooth scrolling */
+        }
+        header {
+            background-color: rgba(255, 76, 76, 0.8); /* Semi-transparent red */
+            color: white;
+            padding: 20px 0;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+        }
+        nav {
+            background-color: rgba(255, 255, 255, 0.7); /* Transparent white background */
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ff4c4c;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #ff5c5c;
+        }
+        .content {
+            padding: 40px 20px;
+            position: relative;
+            z-index: 2;
+        }
+        .content h2, .content h3 {
+            color: #ff4c4c;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .content img:hover {
+            transform: scale(1.05); /* Zoom effect on hover */
+        }
+        .content p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: rgba(51, 51, 51, 0.9);
+            color: white;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            .content p {
+                font-size: 1.2rem;
+            }
+        }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .content h2 {
+                font-size: 1.8rem;
+            }
+            .content h3 {
+                font-size: 1.6rem;
+            }
+            .content p {
+                font-size: 1.2rem; /* Increase font size */
+            }
+            nav a {
+                font-size: 1rem; /* Adjust navigation links */
+            }
+        }
+
+        /* Snowflake effect */
+        .snowflake {
+            position: fixed;
+            top: -10px;
+            font-size: 1rem;
+            color: white;
+            z-index: 1;
+            pointer-events: none;
+            animation: fall 10s linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-100px) translateX(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) translateX(20px);
+                opacity: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Merry Christmas!</h1>
+    </header>
+    <nav>
+        <a href="#welcome">ยินดีต้อนรับ</a>
+        <a href="#santa">ประวัติซานตาคลอส</a>
+        <a href="#activities">กิจกรรมยอดนิยม</a>
+    </nav>
+    <div id="welcome" class="content">
+        <h2>ยินดีต้อนรับสู่การเฉลิมฉลองคริสต์มาส!</h2>
+        <p>สัมผัสความอบอุ่นของฤดูกาลแห่งความสุขกับครอบครัวและเพื่อนฝูง ขอให้คริสต์มาสนี้เต็มไปด้วยความมหัศจรรย์!</p>
+        <img src="11.jpg" alt="ซานตาคลอส">
+        <p>อย่าลืมตกแต่งต้นไม้ เตรียมอาหารอร่อย ๆ และแบ่งปันความสุขในการให้ สุขสันต์วันคริสต์มาส!</p>
+        <p>คริสต์มาส (Christmas) เป็นวันหยุดสำคัญที่เฉลิมฉลองในวันที่ 25 ธันวาคม ของทุกปี...</p>
+    </div>
+    <div id="santa" class="content">
+        <h3>ประวัติซานตาคลอส</h3>
+        <p>ซานตาคลอส หรือที่รู้จักในชื่อ "Saint Nicholas"</p>
+        <img src="22.jpg" alt="ซานตาคลอส"> 
+    </div>
+    <div id="activities" class="content">
+        <h3>กิจกรรมยอดนิยมในวันคริสต์มาส</h3>
+        <ul>
+            <img src="222.jpg" alt="ซานตาคลอส"> 
+            <li>การแลกของขวัญ</li>
+            <li>การตกแต่งต้นคริสต์มาส</li>
+            <li>การทำอาหารคริสต์มาส</li>
+            <li>การร้องเพลงคริสต์มาส</li>
+            <li>การไปโบสถ์</li>
+            <li>การช่วยเหลือคนยากจน</li>
+        </ul>
+    </div>
+    <!-- Snowflake elements -->
+    <div class="snowflake" style="left: 10%; animation-delay: 0s;">❄</div>
+    <div class="snowflake" style="left: 20%; animation-delay: 2s;">❄</div>
+    <footer>
+        <p>&copy; นายตรีเพชร อาญาเมือง สทส.12</p>
+    </footer>
+</body>
+</html>
